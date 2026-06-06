@@ -123,7 +123,12 @@
     <hr class="divider" />
 
     <h2>Contact</h2>
-    <p>Questions? Reach out via <a href="https://github.com/rahgurung/bakbak/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    <p>Questions? Email us at <span id="em"></span><noscript>hi [at] rahulgurung [dot] com</noscript>.</p>
+    <script>
+      var u = 'hi', d = 'rahulgurung.com';
+      var el = document.getElementById('em');
+      el.innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+    </script>
   </div>
 
   <!-- Footer -->
